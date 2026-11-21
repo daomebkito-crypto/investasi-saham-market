@@ -1,0 +1,922 @@
+
+/* =====================================
+   RESET DASAR
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #26364a;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+.header {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #123c78;
+}
+
+.logo span,
+.footer h3 span {
+    color: #2588ed;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #34465d;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #2588ed;
+}
+
+.btn-header {
+    background: #1769c2;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-header:hover {
+    background: #104d91;
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+.hero {
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+    padding: 90px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-label {
+    color: #1769c2;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #123c78;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #2588ed;
+}
+
+.hero-text p {
+    color: #66768b;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: #1769c2;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #104d91;
+}
+
+.btn-secondary {
+    border: 2px solid #1769c2;
+    color: #1769c2;
+    padding: 12px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #1769c2;
+    color: white;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(18,60,120,0.15);
+}
+
+
+/* =====================================
+   SECTION TITLE
+===================================== */
+section {
+    padding: 85px 0;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-title span {
+    color: #2588ed;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    color: #123c78;
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: #748397;
+}
+
+
+/* =====================================
+   TENTANG KAMI
+===================================== */
+.about {
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    background: #f3f8ff;
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 5px solid #2588ed;
+}
+
+.about-text h3 {
+    color: #123c78;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #66768b;
+    margin-bottom: 12px;
+}
+
+
+/* =====================================
+   KEUNGGULAN
+===================================== */
+.advantages {
+    background: #f4f8fd;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.advantage-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(18,60,120,0.12);
+}
+
+.advantage-card h3 {
+    color: #1769c2;
+    margin-bottom: 12px;
+}
+
+.advantage-card p {
+    color: #748397;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   PAKET INVESTASI
+===================================== */
+.investment {
+    background: #ffffff;
+}
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.investment-card {
+    border: 1px solid #e2eaf4;
+    border-radius: 13px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.investment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(18,60,120,0.12);
+}
+
+.investment-card h3 {
+    color: #123c78;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.investment-card .price {
+    color: #1769c2;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.investment-card p {
+    color: #748397;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.investment-card .btn-invest {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #1769c2;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.investment-card .btn-invest:hover {
+    background: #104d91;
+}
+
+
+/* =====================================
+   CARA KERJA
+===================================== */
+.steps {
+    background: #ffffff;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    background: #f3f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 4px solid #2588ed;
+}
+
+.step-card h3 {
+    color: #1769c2;
+    margin-bottom: 12px;
+}
+
+.step-card p {
+    color: #748397;
+}
+
+
+/* =====================================
+   GALERI
+===================================== */
+.gallery-section {
+    background: #f4f8fd;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =====================================
+   KONTAK
+===================================== */
+.contact {
+    background: #ffffff;
+    text-align: center;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #1769c2;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #104d91;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+.footer {
+    background: #102d52;
+    color: white;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.footer h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #c4d3e5;
+    margin: 8px 0;
+}
+
+.footer .copyright {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.footer .risk-notice {
+    max-width: 700px;
+    margin: 20px auto 0;
+    font-size: 12px;
+}
+
+
+/* =====================================
+   RESPONSIVE TABLET
+===================================== */
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .advantages-grid,
+    .investment-grid,
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================
+   RESPONSIVE HP
+===================================== */
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+    .advantages-grid,
+    .investment-grid,
+    .steps-grid,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        padding: 25px;
+    }
+
+    .gallery img {
+        height: 230px;
+    }
+
+}
+
+
+/* =====================================
+   ANIMASI ELEMEN WEBSITE
+===================================== */
+
+.hidden-element {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.show-element {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.package-features {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.package-features p {
+    margin: 8px 0;
+    color: #1769c2;
+}
+
+
+/* =====================================
+   PENYEMPURNAAN RESPONSIVE TABLET & HP
+===================================== */
+
+/* Mencegah elemen melebar melewati layar */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tombol menu hanya tampil pada layar kecil */
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    border: 1px solid #d8e3f0;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+    border-radius: 2px;
+    background: #123c78;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar {
+        min-height: 68px;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .logo {
+        width: auto;
+        text-align: left;
+        font-size: 23px;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+        flex: 0 0 42px;
+    }
+
+    .menu-toggle.is-active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: none;
+        order: 3;
+        width: 100%;
+        padding: 10px 0 14px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #ffffff;
+    }
+
+    .nav-menu.is-open {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 11px 8px;
+        border-top: 1px solid #edf2f8;
+        font-size: 14px;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-image img {
+        display: block;
+    }
+
+    .advantages-grid,
+    .investment-grid,
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery img {
+        height: 210px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: min(92%, 480px);
+    }
+
+    section {
+        padding: 52px 0;
+    }
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+    }
+
+    .hero h1 {
+        font-size: clamp(29px, 8vw, 36px);
+        line-height: 1.18;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-title {
+        margin-bottom: 32px;
+    }
+
+    .section-title h2 {
+        font-size: clamp(23px, 6vw, 28px);
+        line-height: 1.25;
+    }
+
+    .about-content {
+        padding: 24px 20px;
+    }
+
+    .about-text h3 {
+        font-size: 21px;
+    }
+
+    .advantages-grid,
+    .investment-grid,
+    .steps-grid,
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .advantage-card,
+    .investment-card,
+    .step-card {
+        padding: 26px 20px;
+    }
+
+    .simulation-box input,
+    .simulation-box button {
+        min-height: 46px;
+        font-size: 16px;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+
+    .btn-whatsapp {
+        display: block;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        padding: 14px 18px;
+    }
+
+    .footer {
+        padding: 38px 0;
+    }
+}
+
+/* HP sangat kecil */
+@media (max-width: 360px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+}
+
+/* Menghormati pengaturan pengurangan animasi perangkat */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+
+/* =====================================
+   AKSES WHATSAPP YANG LEBIH MUDAH
+===================================== */
+.btn-header-whatsapp {
+    background: #16a34a;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.btn-header-whatsapp:hover {
+    background: #12813c;
+}
+
+.btn-whatsapp-hero {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 25px;
+    border-radius: 7px;
+    background: #16a34a;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp-hero:hover {
+    background: #12813c;
+    transform: translateY(-2px);
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 2000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px 12px 12px;
+    border-radius: 999px;
+    background: #16a34a;
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.22);
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.whatsapp-float:hover {
+    background: #12813c;
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+
+.whatsapp-float-icon {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+    .btn-whatsapp-hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .whatsapp-float {
+        right: 14px;
+        bottom: 14px;
+        padding: 10px 15px 10px 10px;
+    }
+}
